@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animasi Warna</title>
+</head>
+
+<body>
+    <p class="paragraf">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorem, nulla impedit iure cum ut
+        suscipit fugiat sit odit exercitationem quia dicta officiis rerum, unde fugit cumque? Dicta deserunt alias
+        aspernatur.</p>
+
+    <p class="paragraf">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorem, nulla impedit iure cum ut
+        suscipit fugiat sit odit exercitationem quia dicta officiis rerum, unde fugit cumque? Dicta deserunt alias
+        aspernatur.</p>
+
+    <p class="paragraf">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorem, nulla impedit iure cum ut
+        suscipit fugiat sit odit exercitationem quia dicta officiis rerum, unde fugit cumque? Dicta deserunt alias
+        aspernatur.</p>
+
+    <script>
+        var pg = document.getElementsByClassName("paragraf");
+        setInterval(function () {
+            pg[0].style.color = "red";
+            pg[1].style.color = "green";
+            pg[2].style.color = "blue";
+
+            setTimeout(function () {
+                pg[0].style.color = "black";
+                pg[1].style.color = "black";
+                pg[2].style.color = "black";
+            }, 500)
+        }, 1000)
+    </script>
+</body>
+
+</html>

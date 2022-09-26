@@ -1,0 +1,69 @@
+<html>
+
+<head>
+    <title>Belajar Function Javascript</title>
+</head>
+
+<body>
+    <script>
+        // function identitas() {
+        //     var nama = "Rudio Winaldo";
+        //     var umur = "17 Tahun";
+        //     document.write(nama + "<br>");
+        //     document.write(umur + "<br>");
+        // }
+
+        // identitas();
+
+        // function info(nama) {
+        //     alert("Hi " + nama);
+        // }
+
+        // function luas_persegi_panjang(p, l) {
+        //     luas = p * l;
+        //     return luas
+        // }
+
+        // document.write(luas_persegi_panjang(10, 20));
+
+
+        function luaspp() {
+
+            var p = document.getElementById("nilai_p");
+            var l = document.getElementById("nilai_l");
+            var hasil = document.getElementById("hasil");
+
+            // luas = ((p * l).value);
+            // hasil.value = luas;
+
+            hasil.value = p.value * l.value;
+            return hasil
+        }
+    </script>
+
+    <h1>Program Sederhana</h1>
+    <h3>Menghitung Luas Persegi Panjang</h3>
+    <hr>
+    <table>
+        <tr>
+            <td>Nilai Panjang</td>
+            <td>:</td>
+            <td><input type="text" id="nilai_p"></td>
+        </tr>
+        <tr>
+            <td>Nilai Lebar</td>
+            <td>:</td>
+            <td><input type="text" id="nilai_l"></td>
+        </tr>
+        <tr>
+            <td>Luas</td>
+            <td>:</td>
+            <td><input type="text" id="hasil" disabled></td>
+        </tr>
+    </table>
+    <br>
+    <button onclick="luaspp()">Hasil</button>
+
+</body>
+
+</html>

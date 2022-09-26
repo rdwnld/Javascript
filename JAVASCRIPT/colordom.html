@@ -1,0 +1,29 @@
+<html>
+
+<head>
+    <title>hehe</title>
+</head>
+
+<body>
+    <h1>Aplikasi Rubah Warna</h1>
+    <label for="">Warna latar</label>
+    <input type="color" id="bg-color">
+    <hr>
+    <label for="">warna teks</label>
+    <input type="color" id="text-color">
+
+    <script>
+        var bgcolor = document.getElementById("bg-color")
+        var txcolor = document.getElementById("text-color")
+
+        bgcolor.addEventListener("change", function () {
+            document.body.style.backgroundColor = bgcolor.value;
+        })
+
+        txcolor.addEventListener("change", function () {
+            document.body.style.color = txcolor.value;
+        })
+    </script>
+</body>
+
+</html>
